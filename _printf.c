@@ -24,7 +24,31 @@ in _printf(const chat *format,...)
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
+		{
 			i++
-	
+			
+		switch (format[i])
+	       	{
+			case 'c':
+				len += _print_c(args);
+				break;
+			case 's':
+				len += _print_str(args);	
+				break;
+			case '%':
+				len += _print_p(args);
+				break;
+		}
+
+
 	}
+		else 
+		{
+			putchar(format[i];
+			len++
+		}
+	i++;
+}
+	va_end(args);
+	return len;
 }
