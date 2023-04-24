@@ -7,7 +7,7 @@
 
 int _print_p(va_list args)
 {
-	putchar('%');
+	_putchar('%');
 	return 1;
 
 }

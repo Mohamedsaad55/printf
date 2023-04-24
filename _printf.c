@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * _printf - produces output according to a format
- * @format: format string containing the characters and the specifiers
- *
- * Description: This function will call function that will determine which
- * printing function to call depending on the conversion specifiers contained
- * into fmt.
- *
- * Return: length of the formatted output string
- */
+* _printf - produces output according to a format
+* @format: format string containing the characters and the specifiers
+*
+* Description: This function will call function that will determine which
+* printing function to call depending on the conversion specifiers contained
+* into fmt.
+*
+* Return: length of the formatted output string
+*/
 int _printf(const char *format, ...)
 {
 	va_list args;
@@ -42,7 +42,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			putchar(format[i]);
+			_putchar(format[i]);
 			len++;
 		}
 		i++;
