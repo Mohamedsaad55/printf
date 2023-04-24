@@ -12,6 +12,7 @@ int _printf(const char *format,...);
 int _print_c(va_list args);
 int _print_str(va_list args);
 int _print_p(va_list args);
+int _putchar(char c);
 
 
 #endif
