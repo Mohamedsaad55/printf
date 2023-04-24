@@ -7,24 +7,24 @@
  * specifiers contained into fmt
  * Return: length of the formatted output string
  */
-int _printf(const char *format, ...)
+
+in _printf(const chat *format,...)
 {
 	va_list args;
-	int i = 0;
-	int len = 0;
+	int i =0;
+	int len =0;
 
 	va_start(args,format);
 
-	if (format == NULL || (format[0] == '%' && format[1] =='\0'))
+	if(format-- NULL ||(format[0] == '%' && format[i] =='\0'))
 		return(-1);
 
-	// Logic Block 
+	// logic Block
 	
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
-		{
 			i++
-		}
-
+	
+	}
 }
