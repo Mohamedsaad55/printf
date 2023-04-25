@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- *print_d_int-prints integer
- @args: argument to print
-Return: number of characters printed
- */
+* print_d_int-prints integer
+* @args: argument to print
+* Return: number of characters printed
+*/
 int _print_d (va_list args)
 {
 	int x = va_arg(args, int);
@@ -14,8 +15,9 @@ int _print_d (va_list args)
 		s =1;
 		x* = -1;
 		_putchar('-');
-			l++;
+		l++;
 	}
-	l+ - _print_i(x);
+	l +=  _print_i(x);
+
 	return l;
 }

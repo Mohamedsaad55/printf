@@ -9,7 +9,7 @@
 
 int _print_i(unsigned int num)
 {
-	int div =1;
+	unsigned int div =1;
 	int length =0;
 
 	while (num / div > 9 )
@@ -17,13 +17,11 @@ int _print_i(unsigned int num)
 	while (div != 0)
 	{
 		_putchar('0' + num/div);
-		nim %=div;
+		num %=div;
 		div /= 10;
 		length++;
 	
 	}
 
 	return length;
-
-
 }
