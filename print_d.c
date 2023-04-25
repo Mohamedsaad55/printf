@@ -5,7 +5,7 @@
  * @args: argument to print
  *
  * Return: number of characters printed
- /
+*/
 int _print_d(va_list args)
 {
         int x = va_arg(args, int);
