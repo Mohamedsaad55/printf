@@ -19,11 +19,11 @@ int _print_i(unsigned int num)
 		_putchar('0' + num/div);
 		nim %=div;
 		div /= 10;
-		length++
+		length++;
 	
 	}
 
-	return length
+	return length;
 
 
 }
