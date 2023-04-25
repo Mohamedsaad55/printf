@@ -39,6 +39,11 @@ int _printf(const char *format, ...)
 			case '%':
 				len += _print_p(args);
 				break;
+			case 'd' :
+				len += _print_d(args)
+			case 'i' :
+				len += _print_i(args):
+				break;	
 			}
 		}
 		else
