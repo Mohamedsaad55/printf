@@ -16,6 +16,6 @@ int _print_d (va_list args)
 		_putchar('-');
 			l++;
 	}
-	l+ - _print_i(x);
+	l+ = _print_i(x);
 	return l;
 }
