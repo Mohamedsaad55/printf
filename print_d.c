@@ -10,11 +10,9 @@ int _print_d(va_list args)
 {
         int x = va_arg(args, int);
         int l = 0;
-        int s = 0;
-
+      
         if (x < 0)
         {
-                s = 1;
                 x= -1;
                 _putchar('-');
                 l++;
