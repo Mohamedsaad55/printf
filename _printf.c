@@ -16,18 +16,14 @@ int _printf(const char *format, ...)
 	va_list args;
 	int i = 0;
 	int len = 0;
-
 	va_start(args, format);
-
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
-
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
 			i++;
-
 			switch (format[i])
 			{
 			case 'c':

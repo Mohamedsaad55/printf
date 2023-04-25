@@ -9,13 +9,13 @@
 
 int _print_d(va_list args)
 {
-        int x = va_arg(args, int);
-        int l = 0;
-        if (x < 0)
+	int x = va_arg(args, int);
+	int l = 0;
+	if (x < 0)
         {
-                x= -1;
-                _putchar('-');
-                l++;
+		x= -1;
+		_putchar('-');
+		l++;
         }
 
         l += _print_i(x);
