@@ -10,6 +10,7 @@
 *
 * Return: length of the formatted output string
 */
+
 int _printf(const char *format, ...)
 {
 	va_list args;

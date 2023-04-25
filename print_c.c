@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
 * printf_char - prints a char
 * @val: arguments
-* Return: 1
+* Returns the number of Characters 
 */
 
 int _print_c (va_list args)
